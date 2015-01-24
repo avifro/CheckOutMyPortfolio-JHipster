@@ -1,0 +1,36 @@
+server:
+    port: 8080
+
+spring:
+    profiles:
+        active: dev
+    data:
+        mongodb:
+            host: dogen.mongohq.com
+            port: 10012
+            database: app31743868
+            username: avi
+            password: avifro1602
+            uri: mongodb://dogen.mongohq.com:10012/app31743868
+    
+
+    mail:
+        baseUrl: http://localhost:8080
+
+    thymeleaf:
+        mode: XHTML
+        cache: false
+
+metrics:
+    jmx.enabled: true
+    spark:
+        enabled: false
+        host: localhost
+        port: 9999
+    graphite:
+        enabled: false
+        host: localhost
+        port: 2003
+        prefix: CheckoutMyPortfolio
+
+
